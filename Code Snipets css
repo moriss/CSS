@@ -1,0 +1,10 @@
+Code Snipets
+Save Regularly to Github
+
+Fixed Background Image
+background:rgba(0,0,0,0.2) url('img/image2.jpg');
+background-size:cover;
+background-attachment:fixed;
+background-position:center;
+background-blend-mode:overlay;
+color:white;}
