@@ -1,0 +1,8 @@
+Notes: You are using blueLaptop>projects>site styleing>css>trainin.html for practice. Content can then be added here when understood.
+
+Container: The container that holds the items to be 'flexed' AKA the Flex Container, the Parent
+Items: The items within the container. AKA, Items, Content
+
+
+Properties of the container.
+display:  flex; |or|  inline-flex;
