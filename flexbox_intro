@@ -1,8 +1,31 @@
 Notes: You are using blueLaptop>projects>site styleing>css>trainin.html for practice. Content can then be added here when understood.
 
-Container: The container that holds the items to be 'flexed' AKA the Flex Container, the Parent
-Items: The items within the container. AKA, Items, Content
+Source: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-background
 
+Background:
+
+Flexbox, by nature is direction-agnostic (doesn't asume a specific vertical or horizontal flow) Unlike block (vertical) and inline (horizontal) elements in standard css.
+
+Flexbox or Grid?
+Flexbox = Components of an application, and small-scale layouts. 
+Grid = Larger scale layouts.
+
+
+
+
+Flex-flow directions replace the regular Block and Inline css Layouts 
+
+Container: The container that holds the items to be 'flexed' AKA the Flex Container, the Parent.
+Items: The items within the container. AKA, Items, Content.
+
+(My Notes)
+#####
+A little reminder of block and inline elements is helpful here.
+With non-flexbox css, you can set say h1 elements to be inline  h1 {display:inline;} The default is 'block' for h1,2,3... and paragraphs.
+In this case, you are targeting the specific item to be inline. 
+
+The flex-direction property determines a horizontal or vertical flow of content?
+#####
 
 Properties of the container.
 display:  flex; |or|  inline-flex;
