@@ -1,12 +1,23 @@
-Intro: You want to be more intuitive with flexbox so the first port of call is https://css-tricks.com/snippets/css/a-guide-to-flexbox/ and using this file for your notes as your progress through.
+Intro: You want to be more intuitive with flexbox so the first port of call is https://css-tricks.com/snippets/css/a-guide-to-flexbox/ and using this file for your notes as your progress through the guide.
 
-You are using blueLaptop>projects>site styleing>css>trainin.html for practice. Content can then be added here when understood.
+#
+You are using blueLaptop>projects>site styling>css>training.html for practice. Content can then be added to this page when understood.
 
 Source: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-background
 
+#
 Once done, go back to gtcoding and work through the code to understand it better. Useful code snipets can be added to:
 blaptop>projects/site styling>code snipets and eventually updated to the github css repo in its own file.
+Use this file for working through gt coding code:
+Projects/Site Styling/Evans Cycles/gtcoding example
 
+#
+Apply flexbox to copied sites (BBC, Evans cycles etc) seeing if gt code can be used.
+#
+Try coding same site with non flexbox, ie floats and margin-auto etc to get used to both.
+
+
+NOTES FROM CSS TRICKS PAGE
 Flexbox, by nature is direction-agnostic (doesn't asume a specific vertical or horizontal flow) Unlike block (vertical) and inline (horizontal) elements in standard css.
 
 Flexbox or Grid?
