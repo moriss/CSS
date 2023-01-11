@@ -1,8 +1,11 @@
-Notes: You are using blueLaptop>projects>site styleing>css>trainin.html for practice. Content can then be added here when understood.
+Intro: You want to be more intuitive with flexbox so the first port of call is https://css-tricks.com/snippets/css/a-guide-to-flexbox/ and using this file for your notes as your progress through.
+
+You are using blueLaptop>projects>site styleing>css>trainin.html for practice. Content can then be added here when understood.
 
 Source: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-background
 
-Background:
+Once done, go back to gtcoding and work through the code to understand it better. Useful code snipets can be added to:
+blaptop>projects/site styling>code snipets and eventually updated to the github css repo in its own file.
 
 Flexbox, by nature is direction-agnostic (doesn't asume a specific vertical or horizontal flow) Unlike block (vertical) and inline (horizontal) elements in standard css.
 
