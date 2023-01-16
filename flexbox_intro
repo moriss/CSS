@@ -1,11 +1,10 @@
-below to be moved to github flex_intro file.
-
 Intro: You want to be more intuitive with flexbox so the first port of call is https://css-tricks.com/snippets/css/a-guide-to-flexbox/ and using this file for your notes as your progress through the guide.
 
 #
 You are using blueLaptop>projects/site styling/CSS FLEX>training.html for practice. Content can then be added to this page when understood.
 
 Source: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-background
+You are using this source to make notes below and to also copy and paste important text/explanations.
 
 #
 Once done, go back to gtcoding and work through the code to understand it better. Useful code snipets can be added to:
@@ -77,6 +76,36 @@ display:flex; flex-flow: wrap;
 Here you missed out  column  or  row  just before  wrap. 
 I presume this means that the default   row    applies in the     display:flex    rule    an the   flex-flow    rule works with just having the    wrap    value. 
 
+
+stopped at :  " The default value is row nowrap. "
+
+This defines the alignment along the main axis.
+jusfify-content:flex-start  |  flex-end  | center  |  space-between  |  space-around  |  space-evenly  |
+                |||                 |||      ||       |    ||      |
+
+Other Options:
+start: items are packed toward the start of the writing-mode direction.
+end: items are packed toward the end of the writing-mode direction.
+The safest values are flex-start, flex-end, and center.
+
+There are also two additional keywords you can pair with these values: safe and unsafe. 
+Using safe ensures that however you do this type of positioning, you can’t push an element such that it renders off-screen (e.g. off the top) in such a way the content can’t be scrolled too (called “data loss”).
+
+
+Align Items
+This is kind of a 'How They Hang' (my quote) 
+It is how things are laid out along the cross axis. 
+The different options display a vertical movement of the objects to aligh them in a way that the rule demands. 
+So this movement is North to South or up and down. 
+.container {
+  align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+}
+
+IMPORTANT!
+Baselin option seems to match up the first line of text of each item horizontaly. 
+
+Stopped here
+"   align-items   "
 
 
 
