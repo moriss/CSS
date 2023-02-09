@@ -52,6 +52,11 @@ Think of it as a cross placed in the centre of the page.
 The line from left to right = Main Axis  (Main start to Main end)
 The line from top to bottom = Cross Axis (Cross start to Cross end)
 
+
+
+
+
+
 issues:
 With the flex-direction:row,  rule, the items overflow the container with the folowing straightforward code
 So with container display:flex; width:200px; items will overflow the container either with (default)row  or  even when it's explicitly declared (flex-direction:row)
