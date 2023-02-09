@@ -1,9 +1,14 @@
 Flexbox Snipets
 Save Regularly to Github
 
+My Notes:
+@@
+Choose row or column and wrapped or not wrapped (within container)
+@@
+flex-wrap: nowrap | wrap | wrap-reverse;
 {display:flex; flex-wrap:wrap;}/**Defaults to row and wraps**/
 Shorthand for above:
-flex-flow: column wrap; |or| row wrap;
+display:flex; flex-flow: column wrap; |or| row wrap; /**This does not work for me without display:flex; (at the start)**/
 
 
 Contents: Flexbox Notes, SPECIFIC TO GTCODING
