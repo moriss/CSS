@@ -1,14 +1,35 @@
 Flexbox Snipets
 Save Regularly to Github
 
+contents:  My Notes > @@ An organic journey into what can be done, including code @@ 
 My Notes:
 @@
-Choose row or column and wrapped or not wrapped (within container)
-@@
+Choose row or column and wrapped or not wrapped (within container)Not wrapped causes row items to flow outside the container and stay on one line.
+Wrap doesn't seem to be required with a column layout?
+wrap options:
 flex-wrap: nowrap | wrap | wrap-reverse;
-{display:flex; flex-wrap:wrap;}/**Defaults to row and wraps**/
+{display:flex; flex-wrap:wrap;}/**Defaults to row and [obviously] wraps**/
 Shorthand for above:
 display:flex; flex-flow: column wrap; |or| row wrap; /**This does not work for me without display:flex; (at the start)**/
+Also
+left :packed toward left edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like start
+right: packed toward right edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like end
+
+
+Lets see options for arranging the items in a container.
+'Justify content' refers to arranging items along the main axis, ie from left to right as you would write.
+flex start[packed toward the start of the flex-direction.] | 
+flex end [packed toward the end of the flex-direction.] | 
+center[items are centered along the line]
+space between[pushes to the edges] 
+space around[slightly different to space evenly[]
+space evenly
+flex start seems to be the default.
+
+stopped here
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+"There are also two additional keywords you can pair with these values: safe and unsafe. Using safe ensures that however you do this type of positioning, you can’t push an element such that it renders off-screen (e.g. off the top) in such a way the content can’t be scrolled too (called “data loss”)."
+@@
 
 
 Contents: Flexbox Notes, SPECIFIC TO GTCODING
