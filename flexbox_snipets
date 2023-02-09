@@ -1,5 +1,10 @@
-Code Snipets
+Flexbox Snipets
 Save Regularly to Github
+
+{display:flex; flex-wrap:wrap;}/**Defaults to row and wraps**/
+Shorthand for above:
+flex-flow: column wrap; |or| row wrap;
+
 
 Contents: Flexbox Notes, SPECIFIC TO GTCODING
 
