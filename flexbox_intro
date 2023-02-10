@@ -1,4 +1,5 @@
-Contents: Intro, 
+Contents: Intro, training.html,  Flexbox Web page Resource, NOTES FROM CSS TRICKS PAGE >Introduction, Flexbox or Grid, Flex-flow v Block and Inline, Container, Items,  Block and Inline reminder,  Properties of the container,  Flex-flow directions,  
+Overflowing the container,  Default Wrap,  This is interesting,   Justify Content,  Other Justify Content values,   safe and unsafe values ,  Align Items, 
 
 Intro: You want to be more intuitive with flexbox so the first port of call is https://css-tricks.com/snippets/css/a-guide-to-flexbox/ and using this file for your notes as your progress through the guide.
 
@@ -9,19 +10,6 @@ You are using blueLaptop>projects/site styling/CSS FLEX>training.html for practi
 Flexbox Web page Resource
 Source: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-background
 You are using this source to make notes below and to also copy and paste important text/explanations.
-
-#
-GTCoding
-Once done, go back to gtcoding and work through the code to understand it better. Useful code snipets can be added to:
-blaptop>projects/site styling>code snipets and eventually updated to the github css repo in its own file.
-Use this file for working through gt coding code:
-Projects/Site Styling/Evans Cycles/gtcoding example
-
-#
-Apply flexbox to copied sites (BBC, Evans cycles etc) seeing if gt code can be used.
-#
-Try coding same site with non flexbox, ie floats and margin-auto etc to get used to both.
-
 
 
 
@@ -58,6 +46,8 @@ The flex-direction property determines a horizontal or vertical flow of content.
 Properties of the container.
 display:  flex; |or|  inline-flex; (Not  currently sure about the difference between flex and inline flex).
 
+
+Flex-flow directions:
 Where a “regular” layout is based on both block and inline flow directions, the flex layout is based on “flex-flow directions”. 
 
 Think of it as a cross placed in the centre of the page. 
@@ -67,10 +57,7 @@ The line from top to bottom = Cross Axis (Cross start to Cross end)
 
 
 
-
-
-
-issues:
+Overflowing the container:
 With the flex-direction:row,  rule, the items overflow the container with the folowing straightforward code
 So with container display:flex; width:200px; items will overflow the container either with (default)row  or  even when it's explicitly declared (flex-direction:row)
 BELOW FIXES THIS.
@@ -83,11 +70,13 @@ This is a shorthand rule for the flex-direction and flex-wrap properties, which 
 .container {
   flex-flow: column wrap; |or| row wrap;
 }
-A final note from me here is that wrap happens by default with columns. So no matter how far you expand vertically, the container always encompasses all of its items.  (display:flex; flex-direction:column; [no wrap rule required]). I have a feeling this may be stating the obvious but thought i would add it here for reference.
+
+Default Wrap:
+A final note from me here is that wrap seems to happen by default with columns. So no matter how far you expand vertically, the container always encompasses all of its items.  (display:flex; flex-direction:column; [no wrap rule appears to be required]). I have a feeling this may be stating the obvious but thought i would add it here for reference.
 
 I should mention here that the  display:flex;  rule is still needed at the beginning.
-stopped here on guide page
-flex-flow
+
+
 
 This is interesting
 display:flex; flex-flow: wrap;
@@ -95,17 +84,18 @@ Here you missed out  column  or  row  just before  wrap.
 I presume this means that the default   row    applies in the     display:flex    rule    an the   flex-flow    rule works with just having the    wrap    value. 
 
 
-stopped at :  " The default value is row nowrap. "
 
+Justify Content,
 This defines the alignment along the main axis.
 jusfify-content:flex-start  |  flex-end  | center  |  space-between  |  space-around  |  space-evenly  |
                 |||                 |||      ||       |    ||      |
 
-Other Options:
+Other Justify content values:
 start: items are packed toward the start of the writing-mode direction.
 end: items are packed toward the end of the writing-mode direction.
 The safest values are flex-start, flex-end, and center.
 
+safe and unsafe:
 There are also two additional keywords you can pair with these values: safe and unsafe. 
 Using safe ensures that however you do this type of positioning, you can’t push an element such that it renders off-screen (e.g. off the top) in such a way the content can’t be scrolled too (called “data loss”).
 
