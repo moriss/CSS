@@ -1,12 +1,17 @@
+Contents: Intro, 
+
 Intro: You want to be more intuitive with flexbox so the first port of call is https://css-tricks.com/snippets/css/a-guide-to-flexbox/ and using this file for your notes as your progress through the guide.
 
 #
+training.html
 You are using blueLaptop>projects/site styling/CSS FLEX>training.html for practice. Content can then be added to this page when understood. The can also be added to  flexbox_snipets  in a more condensed way with explanations.
 
+Flexbox Web page Resource
 Source: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-background
 You are using this source to make notes below and to also copy and paste important text/explanations.
 
 #
+GTCoding
 Once done, go back to gtcoding and work through the code to understand it better. Useful code snipets can be added to:
 blaptop>projects/site styling>code snipets and eventually updated to the github css repo in its own file.
 Use this file for working through gt coding code:
@@ -18,22 +23,30 @@ Apply flexbox to copied sites (BBC, Evans cycles etc) seeing if gt code can be u
 Try coding same site with non flexbox, ie floats and margin-auto etc to get used to both.
 
 
+
+
 NOTES FROM CSS TRICKS PAGE
+Introduction:
 Flexbox, by nature is direction-agnostic (doesn't asume a specific vertical or horizontal flow) Unlike block (vertical) and inline (horizontal) elements in standard css.
 
 Flexbox or Grid?
-Flexbox = Components of an application, and small-scale layouts. 
-Grid = Larger scale layouts.
+Flexbox for Components of an application, and small-scale layouts. 
+Grid for Larger scale layouts.
 
 
 
-
+Flex-flow v Block and Inline
 Flex-flow directions replace the regular Block and Inline css Layouts 
 
-Container: The container that holds the items to be 'flexed' AKA the Flex Container, the Parent.
-Items: The items within the container. AKA, Items, Content.
 
-(My Notes)
+Container: 
+The container that holds the items to be 'flexed' AKA the Flex Container, the Parent.
+Items: 
+The items within the container. AKA, Items, Content.
+
+
+
+Block and Inline reminder
 #####
 A little reminder of block and inline elements is helpful here.
 With non-flexbox css, you can set say h1 elements to be inline  h1 {display:inline;} The default is 'block' for h1,2,3... and paragraphs.
