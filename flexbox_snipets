@@ -1,22 +1,16 @@
 Flexbox Snipets
 Save Regularly to Github
 
-contents:  My Notes > @@ An organic journey into what can be done, including code @@ 
-My Notes:
-@@
-Choose row or column and wrapped or not wrapped (within container)Not wrapped causes row items to flow outside the container and stay on one line.
-Wrap doesn't seem to be required with a column layout?
-wrap options:
+contents:  
+
+
+display:flex; 
 flex-wrap: nowrap | wrap | wrap-reverse;
-{display:flex; flex-wrap:wrap;}/**Defaults to row and [obviously] wraps**/
-Shorthand for above:
-display:flex; flex-flow: column wrap; |or| row wrap; /**This does not work for me without display:flex; (at the start)**/
-Also
-left :packed toward left edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like start
-right: packed toward right edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like end
+Shorthand:
+display:flex; flex-flow: column wrap; |or| row wrap; /**display:flex is required here**/
+flex-wrap:wrap; /**Defaults to row and [obviously] wraps**/
 
 
-Lets see options for arranging the items in a container.
 'Justify content' refers to arranging items along the main axis, ie from left to right as you would write.
 flex start | flex end | center | space between | space around | space evenly | flex start
 Paired with 'safe' avoids 'data loss' (elements you can't scroll to)
@@ -27,48 +21,3 @@ Align Items: How child elements 'hang' within the div.
 align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
 
 
-
-stopped here
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-"There are also two additional keywords you can pair with these values: safe and unsafe. Using safe ensures that however you do this type of positioning, you can’t push an element such that it renders off-screen (e.g. off the top) in such a way the content can’t be scrolled too (called “data loss”)."
-@@
-
-
-Contents: Flexbox Notes, SPECIFIC TO GTCODING
-
-
-
-Flexbox Notes
-Redo this looking at gt coding
-#############################################
-
-
-
-SPECIFIC TO GTCODING
-
-ON HOVER EXPAND
-.btn-readmore {
-    padding:8px 24px; border:3px solid black;
-    transition:0.4s; display:inline-block;
-    margin-bottom:24px; margin-left:24px;
-    font-weight:bold; cursor:pointer; background:white;
-}
-
-.btn-readmore:hover{
-    background:red; text-decoration:none; 
-    padding:8px 64px 8px 24px; color:white;
-    transition:0.4s;
-}
-
-
-
-
-BACKGROUND
-Fixed Background Image
-background:rgba(0,0,0,0.2) url('img/image2.jpg');
-background-size:cover;
-background-attachment:fixed;
-background-position:center;
-background-blend-mode:overlay;
-color:white;}
-####################################################
