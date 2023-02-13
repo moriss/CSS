@@ -5,7 +5,7 @@ I'm not talking about big website design. I just mean trying out alternatives fo
 
 Your go-to files are:
 flexbox_intro  for further guidence 
-Organic : for following a logical sequence of typical things you would like to be able to to using flexbox
-flexbox_snipets:  A short list of code you've used and understood, with explanations
+Organic : for following a logical sequence of typical things you would like to be able to achieve using flexbox
+flexbox_snipets:  A short list of code you've used and understood, with explanations (for quick reerence)
 
 All three files are used interchangeably
