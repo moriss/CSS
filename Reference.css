@@ -1,0 +1,455 @@
+/***CSS COURSE**/
+
+/***Contents 34.28 in wp course***/
+/***input boxes, images, line height, nav, 
+
+***/
+
+
+/***input boxes, 33.31 in***/
+input,textarea {height:32px; padding:0 16px; 
+font-family:'Roboto Condensed' , sans-serif;
+font-size:20px;border:none; 
+box-shadow:inset 8px 3px 18px -4px rgba(0, 0, 0, 0.4)
+}
+input-focus, text-area:focus {outline:none;}
+/*********************************/
+
+
+
+/**images**/
+#banner {height:100vh; display:flex; align-items:center;
+justify-content:center; flex-direction:column;
+background:rgba(0,0,0,0.2) url('img/image2.jpg');
+background-size:cover;
+background-attachment:fixed;
+background-position:center;
+background-blend-mode:overlay;
+color:white;}
+/***********************/
+
+
+
+/***Line height***/
+p {line-height:1.5;}
+/*******************************/
+
+/***nav***/
+nav{
+    height:72px;background:#202125;
+    width:100%; margin:0; position:fixed;
+    font-family:'Roboto Condensed',sans-serif;
+    font-size:20px; display:flex; 
+    justify-content: space-between;
+    padding:0 16px 0 0 ;
+    box-sizing:border-box; z-index:100;
+}
+
+nav a{
+    padding:0 32px; color:#eee; transition:0.4s;
+}
+
+nav a:hover{
+    text-decoration:none; color: red;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    justify-content: space-around;
+    align-items:center;
+    height:100%;
+    margin:0;
+}
+/*******************************/
+
+
+
+
+/**The box-sizing property allows us to include the padding and border in an element's total width and height.**/
+*{box-sizing:border-box;}
+
+#main {flex-direction: row; /**or column**/}/**Sets the directional flow of this div's children.**/
+
+
+.mint > * {border:2px solid green;} /**selects ALL child elements of the div**/
+
+
+/**NB: THE SYNTAX BELOW WILL NOT SELECT TARGET ANCHORS**/
+a:link /**AN UNVISITED LINK**/
+a:visited /**A VISITED LINK 
+
+OTHEREWISE, BOOK "SELECTORS AND SPECIFITY..." page 55***/
+
+/**SELECTOR TYPES IN CSS**/
+
+* { }/**UIVERSAL**/
+
+p { }/**ELEMENT TYPE**/
+
+#string { }/**ID SELECTORS**/
+
+.string { }/**CLASS SELECTOR**/
+
+#container .box {  }/**DESCENDANT COMBINATOR (STYLES .BOX CLASS [WHICH DOES NOT HAVE TO BE AN IMMEDIATE CHILD OF #CONTAINER)**/
+
+#container > .box/**CHILD COMBINATOR (TARGETING IMMEDIATE CHILDEN ONLY) [SO .BOX NEEDS TO BE A DIRECT CHILD OF #CONTAINER**/
+
+h2 ~  p {  }/**GENERAL SIBLING COMBINATOR. ALL P ELEMENTS WILL BE STYLED WHERE THEY ARE SIBLINGS OF H2 ELEMENTS) **/
+
+h1 + p  {  } /**ADJACENT SIBLING COMBINATOR. ALL P ELEMENTS WILL BE STYLED WHERE THEY ARE SIBLINGS OF H1 ELEMENTS WHICH COME DIRECTLY AFTER AN H1 ELEMENT) **/
+
+input [type="text"]  {  } OR
+input [type]  {  }
+/**ATTRIBUTE SELECTOR SELECTS BASED ON THE PRESENCE AND/OR VALUE OF AN HTML ATTRIBUTE . ALL P ELEMENTS WILL BE STYLED WHERE THEY ARE SIBLINGS OF H1 ELEMENTS WHICH COME DIRECTLY AFTER AN H1 ELEMENT) **/
+
+/**PSEUDO CLASS**/
+a:hover {color:red;}  /**THE STATE OF BEING HOVERED**/
+
+/**PSEUDO ELEMENT**/
+.container:before {} /**INSERTS AN IMAGINARY ELEMENT INTO THE PAGE INSIDE IT'S TARGETED ELEMENT BEFORE ITS CONTENTS**/
+THERE ARE 4 PSEUDO ELEMENT SELECTORS.
+1, LETS YOU STYLE THE FIRST LETTER OF AN ELEMENT.
+h2::first-letter {}
+2, LETS YOU STYLE THE FIRST LINE OF AN ELEMENT
+p::first-line {}
+3+4, BOTH CREATE AND STYLE "BEFORE" AND "AFTER" CONTENT.
+::first-line The double colon is meant to distinguish these pseudo elements from pseudo classes above.
+/*******************************************************/
+
+body {background:lightgreen; color:white; border:6px solid pink;}
+h3 {color:pink;}
+
+/***UNSIVERSAL SELECTOR***/
+/***   * {border:1px solid brown;}   ***/
+
+.warning{color:white; background:red;}
+.urgent{background:green;}
+
+/***CHAINED SELECTORS***/
+.urgent.warning{text-decoration:underline;}
+
+/***ATTRIBUTE SELECTION***/
+h3[class]{font-size:2em; color:red;}
+
+*[src]{border:4px dotted black;}
+
+/***CHAINED ATTRIBUTE SELECTION***/
+a[href][title]{font-size:2em; color:blue; text-decoration:none;}
+
+/***EXACT VALUE ATTRIBUTE SELECTION***/
+a[href="grangeballetschool.co.uk"]{text-decoration:none; color:red;}
+
+/**CHAINED VALUE ATTRIBUTE SELECTION**/
+a[href="@"][title="tooltip"]{font-size:2em; color:blue;}
+
+/**SELECTS "warning" FROM A CLASS ATTRIBUTE'S SPACE SEPARATED LIST**/
+h4[class~="warning"]{border:6px dotted red;}
+
+/**SUBSTRING SELECTION: SELECTS ANY CLASS ATTRIBUTE WITH ANY VALUE CONTAINING THE LETTERS "bo" IN THAT ORDER**/
+h5[class*="bo"] {color:brown;}
+
+/**START-of-STRING SELECTION**/
+a[href^="https"] {border:8px solid red;}
+/**END-STRING SELECTION**/
+a[href$="co.uk"] {border:8px solid blue;}
+
+/**PARTICULAR ATTRIBUTE SELECTION (IS EQUAL TO OR BEGINS WITH "en")**/
+*[lang|="en"] {background:red;}
+
+/**DECENDANCY SELECTION**/
+p em {border:4px dotted black;}
+
+/**NB: LISTS SEEM TO REQUIRE A DIV ANCESTOR. PERHAPS BECAUSE LISTS ARE INLINE ELEMENTS. IE DOES NOT WORK IF ANCESTOR IS A P ELEMENT**/
+div ul li {list-style-type:none; color:blue;}
+p ul li {list-style-type:none; color:blue;}
+
+
+h5 {color:black;}
+h5 strong {color:red;}
+
+/**CHILD COMBINATOR**/
+#parent > span {color:blue; font-size:1.2em;}
+
+/**SELECTS ANY P ELEMENT THAT DIRECTLY FOLLOWS AN H1 ELEMENT**/
+h1 + p {color:blue;}
+
+/**THE ROOT ELEMENT OF A DOCUMENT USUALLY REFERS TO THE HTML ELEMENT**/
+:root {border:10px dotted black;}
+
+/**PSEUDO/PHANTOM CLASSES**/
+/**A PSEUDO CLASSES IS USED TO DEFINE A SPECIAL STATE OF AN ELEMENT**/
+
+/**FOR EXAMPLE IT CAN BE USED TO STYLE AN ELEMENT WHEN A USER MOUSES OVER IT, STYLE VISITED AND UNVISTED LINKS, AND STYLE AN ELEMENT WHEN IT GETS FOCUS.**/
+
+/**Dynamic Pseudo Classes. Also commonly used for links, the dynamic pseudo classes can be used to apply styles when something happens to something. **/
+
+/**THE SYNTAX FOR PSEUDO CLASSES**/
+/**SELECTOR:PSEUDO-CLASS {PROPERTY:VALUE;}**/
+
+a:link:hover	{color:green; }
+a:visited:hover	{color:red; }
+a:link:hover:lang(de)	{color:brown; }
+
+/*******SELECTING ROOT************/
+:root {}
+body {}
+
+/*******NODES************/
+/*******A DIV IS AN ELEMENT NODE, TEXT IS A TEXT NODE AND COMMENTS ARE COMMENT NODES. NEW LINES AND WHITE SPACE ARE TEXT NODES************/
+
+/**STOPS A PARAGRAPH WITH NO CHILDREN, TEXT OR WHITE SPACE FROM DISPLAYING (GOOD FOR CMS)**/
+p:empty {display:none;}
+
+/**RMEMEBER, PHANTOM CLASS ONLY REFERS TO THE ELEMENT TO WHICH IT IS ATTACHED**/
+a[href] img:only-child {border:9px solid red;}
+/**ABOVE REFERS TO AN ONLY CHILD IMAGE WHERE THE HREF IS EITHER THE PARENT OR ANOTHER ANCESTOR**/
+
+a[href] > img:only-child {border:9px solid red;}
+/**THIS CHILD COMBINATOR ENSURES THE HREF CAN ONLY BE THE PARENT**/
+
+
+
+
+
+
+
+/**GENERAL SIBLING COMBINATOR, SELECTS ANY ELEMENT THAT  FOLLOWS ANOTHER ELEMENT WITH THE SAME PARENT. THEY DON'T HAVE TO BE ADJACENT**/
+h2 ~ p{color:white;}
+
+
+
+/**SELECTS AN IMAGE WHERE IT IS THE ONLY CHILD OF A PARENT ELEMENT (WITH NO OTHER SIBLINGS.**/
+a[href] img:only-child {color:green;}
+
+
+/**ONLY OF TYPE; MATCHES AN IMAGE WHERE THERE ARE NO OTHER IMG SIBLINGS**/
+a[href] img:only-of-type {color:green;}
+
+/**SELECTS IF THEY ARE FIRST AND LAST CHILDREN OF A PARENT**/
+ul li:first-child {list-style-type:none;}
+ul li:last-child {text-transform:uppercase;}
+
+/**DON'T FORGET A COMMON ERROR IS TO THINK p:first-child SELECTS THE FIRST CHILD OF A "P" ELEMENT WHERE IN FACT IT SELECTS THE FIRST "P" ELEMENT WITHIN A GROUP OF "P" SIBLINGS**/
+
+/**YOU CAN ALSO EXTEND THE SELECTION TO AN em ELEMENT INSIDE A LAST CHILD li ELEMENT AS IN THE EXAMPLE BELOW**/
+ul li:last-child em {text-transform:uppercase;}
+
+/**THIS SELECTS THE FIRST TABLE SIBLING EVEN WHEN IT'S NOT THE FIRST ACTUAL SIBLING IE THE FIRST ACTUAL SIBLING MAY BE A PARAGRAPH.**/
+table:first-of-type{color:green;}
+
+
+/**STOPPED HERE**/
+
+
+
+li:nth-child(2){text-transform:uppercase;}
+/**SELECTS THE SECOND CHILD**/
+
+/**RECURRING SELECTION**/
+li:nth-child(3n+1) {background:black;}
+3n means select every 3rd item starting at 0
+3n+1 means select every 3rd item starting at 1
+2n+4 means select every 2nd item starting at 4
+4n-3 means select every 4th item starting at 1 
+
+/**FURTHERMORE**/
+li:nth-child(2n){color:white;}/**selects even no's**/
+li:nth-child(2n+1){color:white;}/**selects odd no's
+(2n-1)Also selects odd no's**/
+
+/**ALTERNATIVELY!!**/
+li:nth-child(even){color:white;}selects even no's
+li:nth-child(odd){color:white;}selects odd no's
+
+/**BELOW IS THE MIRROR IMAGE (STARTING AT THE END)**/
+li:nth-last-child(1n+3){background:grey;}
+
+
+
+/**USING (>) MAKES THINGS MORE SPECIFIC.**/
+div ul li:nth-child(1){color:white; background:black;}
+/**THIS ALSO SELECTS LIST ITEMS WITHIN NESTED UNORDERED LISTS WHERE THE DIV IS THE ANCESTOR**/
+
+div > ul > li:nth-child(1){color:white; background:black;}
+/**THIS ONLY SELECTS LISTS WHOS PARENT IS A DIV AND NOT MORE DEEPLY NESTED LISTS.**/
+
+
+
+/*****************DYNAMIC HYPERLINK SUDO CLASSES******************/
+
+/**NB: THE SYNTAX BELOW WILL NOT SELECT TARGET ANCHORS**/
+a:link /**AN UNVISITED LINK**/
+a:visited /**A VISITED LINK (This checks browser history to determine if the link has already been visited by the user)**/
+
+
+/**APPLYING STYLES TO EXTRENAL SITES**/
+a.external:link {color:green;}
+a.external:visited {color:red;}
+/**WHERE 'a.external' IS SIMPLY A MADE-UP BUILT-IN CLASS, SO THE HTML SYNTAX WOULD READ '<a class="external" href="#">click here</a>'**/
+
+/**ONLY CERTAIN STYLES CAN BE APPLIED TO VISITED LINKS FOR PRIVACY REASONS. BOLD STYLE IS NOT ALLOWED BECAUSE IT IS DISCOVERABLE BY A DOM SCRIPT. THEREFORE ONLY COLOUR RELATED PROPERTIES CAN APPLY TO TEXT, BACKGROUND-COLOR, COLUMN RULE COLOUR, OUTLINE COLOUR AND BORDER COLOUR.
+ALSO
+STYLING UNVISITED LINKS WILL BE COPIED OVER TO VISITED LINKS SO THEY CAN'T BE DIFERENTIATED.  **/
+
+/**'TYPICAL' WEBSITE SYLING**/
+a:link {color:navy;}
+a:visited {color:gray;}
+/**a:focus {  }**/
+a:hover {color:red;}
+a:active {color:yellow;}/**Becomes active when you click on it.**/
+
+/**USER ACTION PSEUDO CLASSES**/
+:focus /**An element that currently has the input focus (can be activated in some way or accept keyboard input)**/
+
+input:focus{background-color: yellow;}
+/**(the input you are currently focusing on. In this case having clicked the input box.)**/
+
+input:hover {background:black;}
+input:active {background:red;}/**(In this case, active seems to mean double clicking then holding the mouse down on second click)**/
+
+/**OTHER STRANGE USES FOR DYNAMIC PSEUDO CLASSES**/
+li:hover {background:yellow;} p57
+
+
+/**USER INTERFACE STATE PSEUDO CLASSES**/
+/**These allow for styling based on the current state of user interface elements such as checkboxes**/
+
+:enabled /**Available for input**/
+:disabled  /**NOT available for input**/
+:checked  /**Refers to selected radion buttons or checkboxes.**/
+:indeterminate /**Radio buttons or checkboxes that are neither checked or unchecked. **/
+
+/**AS AN EXERCISE FROM THE OU COURSE, CREATE A TABLE AND MAKE ONE CELL IN PARTICULAR SPAN OVER TWO COLUMNS AND ANOTHER OVER MORE THAN ONE ROW**/
+<th colspan="2">
+<th rowspan="2">
+
+radio:checked {border:3px solid red;}(apparantly only works in opera)
+
+
+/**TARGET WORKS AS FOLLOWS**/
+/**I ONLY MANAGED TO GET IT TO WORK USING A LIVE SITE AS FOLLOWS**/
+#sudo:target {border:4px solid red;}/**IN THE CSS FILE**/
+
+/**THE LINK TO THE TARGET**/
+ <a href="http://server201.co.uk//#sudo">link to styled target</a>
+ 
+ /**THE TARGET ITSELF**/
+ <div id="sudo">styled target link</div>
+ /**also works with anchors**/
+ <a id="bodu">anchor</a>
+ 
+ /**IMPORTANT NOTE, if you style the 'sudo' div above WITHOUT the target pseudo class, the div will still style BUT NOT AS A TARGET OF A LINK. IN OTHER WORDS IT WILL REMAIN STYLED REGARDLESS OF WHETHER IT IS A TARGET.  **/
+
+
+*:lang(fr) {color:blue;} /**A ROBUST WAY TO SELECT AND STYLE TEXT BASED ON THE LANGUAGE USED**/
+
+/**THE NEGATION PSEUDO CLASS**/
+li:not(.info) {color:green;}/**SELECTS LIST ITEMS THAT DO NOT HAVE A CLASS ATTRIBUTE OF .info**/
+
+/**OR IT CAN BE TURNED ON ITS HEAD**/
+.info:not(li) {color:green;}
+/**THE WAY IT WORKS IS THAT YOU PUT A SELECTOR IN THE PARENTHESES**/
+/**eg, type, universal, attrubute, class, id or pseudo class SELECTORS. but for now, only one at a time can be used**/
+
+
+/**NEXT IS MORE COMPLEX USES FOR THE :not pseudo class**/
+
+*:not(table) >section{border:1px solid green;}
+
+/**CHAINING THE :not PSUEDO CLASS**/
+*.link:not(li):not(p){font-weight:bold;}
+
+/**PSEUDO ELEMENTS**/
+/**Can only be applied to block elements (h2,p etc) and NOT inline (<span>,<a href> etc.**/
+P::first-letter {font-weight:bold;}
+P::first-line {font-weight:bold;}
+/**AND CREATE AND STYLE...**/
+P::before {font-weight:bold;}
+P::after {font-weight:bold;}
+
+/**
+###SPECIFITY###
+SELECTOR					WEIGHT
+INLINE	<h1 style="...">	1,0,0,0
+ID							0,1,0,0
+CLASS						0,0,1,0
+Element/psuedo element 		0,0,0,1
+ID selecor (p[id="dib"])	0,0,1,0
+Universal "*"				0,0,0,0
+COMBINATOR					NOT EVEN ZERO
+
+!important (Doesn't hold a weight but overides ALL since !important declarations are grouped apart from "unimportant" Declarations which are everything else.)
+.light {color:red !important;}
+
+The * selector offers 0 specifity
+The Combinator offers NO specifity,not even "0"
+
+##INHERITENCE##
+SPECIFITY STATUS=NONE, NOT EVEN "0".
+THEREFORE, THE UNVIVERSAL SELECTOR WOULD WIN OVER INHERITENCE.
+Applies styles to a selectors descendents (but not always@@)
+Always works from top to bottom unless background styles placed in the body also work for html root.
+@@ For the purposes of common sense, border styles (as well as margins, padding and backgrounds) do no follow the inheritence rules. 
+**/
+/***THE ULTIMATE CASCADE***/
+/**THE STEPS**/
+/**
+1	Find all rules that contain a selector that matches a given element.
+
+2	Sort by weight all declarations applying to the element.
+!important=Higher wait than those without this in the rule.
+Sort by origin (Author, Reader or User Agent.):
+a)	Usually, Author wins over Reader.
+b)	!important Reader wins over !important Author
+c) 	Author and Reader win over User Agent
+
+
+3)	Sort by specifity. ie 0,1,0,0 etc
+4)	Sort by order of declarations. (last one wins) The later the declaration appears, the more weight it is given.
+
+Imported style sheet declarations come before all declarations within the style sheet that imports them.
+@import url(basic.css);h1 {color:blue;}
+And actual "basic.css" contains h1{color:red;} within it:
+
+#NB:IN MY TEST @import url(style.css); body {background:black;} WINS OVER 
+
+SORTING BY WEIGHT AND ORIGIN
+First Prize= Reader !important
+Second Prize=Author !important
+Third Prize =Author normal declarations
+Fourth Prize=Reader normal declarations
+Fifth Prize= User Agent declarations.
+Note:All Author declarations win over User Agent's declarations.
+**/
+
+/**LINK ORDERING**/
+/**link-visited-hover-active OR LVHA**/
+
+/**focus should either go before or after hover**/
+
+/**SOLVE ORDEREING PROBLEMS BY CHAINING**/
+
+:link {}
+:visited {}
+:link:hover {}
+:visited:hover {}
+
+ACCESSIBILITY for screen reader
+<a aria-label="facebook" href="facebook.com"><img src="facebook.png"/></a>
+
+.main-title {letter-spacing:2px;}
+
+The ::after selector inserts something after the content of each selected element(s).
+EG:
+p::after { content: " - Remember this";}
+
+p::after { content: " - Remember this";}
+.title {text-transform:uppercase;}
+.para {font-weight:300;}
+
+p {font-weight:300;}
+p {opacity:0.7;}
+
+
+
