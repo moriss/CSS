@@ -18,13 +18,15 @@ right: packed toward right edge of the container, unless that doesn’t make sen
 
 Lets see options for arranging the items in a container.
 'Justify content' refers to arranging items along the main axis, ie from left to right as you would write.
-flex start[packed toward the start of the flex-direction.] | 
-flex end [packed toward the end of the flex-direction.] | 
-center[items are centered along the line]
-space between[pushes to the edges] 
-space around[slightly different to space evenly[]
-space evenly
-flex start seems to be the default.
+flex start | flex end | center | space between | space around | space evenly | flex start
+Paired with 'safe' avoids 'data loss' (elements you can't scroll to)
+unsafe : I don't know why you would pair a value with 'unsafe'?
+
+
+Align Items: How child elements 'hang' within the div.
+align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+
+
 
 stopped here
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
