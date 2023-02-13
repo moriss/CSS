@@ -112,9 +112,11 @@ So this movement is North to South or up and down.
 IMPORTANT!
 Baselin option seems to match up the first line of text of each item horizontaly. 
 
-Stopped here
-"   align-items   "
 
+STOPPED HERE
+align-content
+This property only takes effect on multi-line flexible containers, where flex-wrap is set to either wrap or wrap-reverse). A single-line flexible container (i.e. where flex-wrap is set to its default value, no-wrap) will not reflect align-content.
+align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe
 
 
 
