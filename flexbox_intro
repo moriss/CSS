@@ -100,7 +100,7 @@ There are also two additional keywords you can pair with these values: safe and 
 Using safe ensures that however you do this type of positioning, you can’t push an element such that it renders off-screen (e.g. off the top) in such a way the content can’t be scrolled too (called “data loss”).
 
 
-Align Items   I think the following:(For single horizontal lines of content) [see 'align-content' below instead, for multi-line flexible containers]
+Align Items   I think the following:(For single horizontal lines of content with no wrap) [see 'align-content' below instead, for multi-line flexible containers]
 This is kind of a 'How They Hang' (my quote) 
 It is how things are laid out along the cross axis. 
 The different options display a vertical movement of the objects to aligh them in a way that the rule demands. 
@@ -114,8 +114,8 @@ Baselin option seems to match up the first line of text of each item horizontaly
 
 
 STOPPED HERE
-align-content   ( for multi-line flexible containers. us 'align-items' above for single line flexible containers)
-This property only takes effect on multi-line flexible containers, where flex-wrap is set to either wrap or wrap-reverse). A single-line flexible container (i.e. where flex-wrap is set to its default value, no-wrap) will not reflect align-content.
+align-content   For multi-line flexible containers. (Use 'align-items' above for single line flexible containers)
+This property only takes effect on multi-line flexible containers, where flex-wrap is set to either wrap or wrap-reverse). This will not work with a single-line flexible container (i.e. where flex-wrap is set to its default value of no-wrap).
 align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe
 
 
