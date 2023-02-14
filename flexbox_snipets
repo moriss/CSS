@@ -17,7 +17,11 @@ Paired with 'safe' avoids 'data loss' (elements you can't scroll to)
 unsafe : I don't know why you would pair a value with 'unsafe'?
 
 
-Align Items: How child elements 'hang' within the div.
+Align Items: How child elements 'hang' within the div. NB:For single line flexible containers.
 align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+
+
+align-content   (for multi-line flexible containers). 
+align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe
 
 
