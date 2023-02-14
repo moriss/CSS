@@ -119,6 +119,25 @@ This property only takes effect on multi-line flexible containers, where flex-wr
 align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe
 
 
+GAP: You have just pasted below from the resource. You haven't applied it anywhere yet. 
+gap: Not exclusively for flexbox. Also used in grid and multi-column layout.
+Explicitly controls the space between flex items. It applies that spacing only between items not on the outer edges. 
+.container {
+  display: flex;
+  ...
+  gap: 10px;
+  gap: 10px 20px; /* row-gap column gap */
+  row-gap: 10px;
+  column-gap: 20px;
+}
+
+
+
+
+Properties for the Children
+(flex items)
+
+
 
 
 
