@@ -1,5 +1,21 @@
-Contents: Intro, training.html,  Flexbox Web page Resource, NOTES FROM CSS TRICKS PAGE >Introduction, Flexbox or Grid, Flex-flow v Block and Inline, Container, Items,  Block and Inline reminder,  Properties of the container,  Flex-flow directions,  
-Overflowing the container,  Default Wrap,  This is interesting,   Justify Content,  Other Justify Content values,   safe and unsafe values ,  Align Items, 
+Contents: Intro 
+training.html,  
+Flexbox Web page Resource 
+NOTES FROM CSS TRICKS PAGE >Introduction 
+Flexbox or Grid
+Flex-flow v Block and Inline
+Container
+Items
+Block and Inline reminder
+Properties of the container
+Flex-flow directions 
+Overflowing the container
+Default Wrap
+This is interesting
+Justify Content
+Other Justify Content values
+safe and unsafe values
+Align Items, 
 
 Intro: You want to be more intuitive with flexbox so the first port of call is https://css-tricks.com/snippets/css/a-guide-to-flexbox/ and using this file for your notes as your progress through the guide.
 
