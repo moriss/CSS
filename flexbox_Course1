@@ -54,11 +54,13 @@ In this case, you are targeting the specific item to be inline.
 
 The flex-direction property determines a horizontal or vertical flow of content. 
 #####
-stopped here
+
 Properties of the container.
 display:  flex; |or|  inline-flex; 
-flex gives the container the full width of the screen.
+flex gives the container the full width of the screen/parent.
 inline-flex only gives the container the required width for it's child elements. 
+
+STOPPED HERE
 
 
 Flex-flow directions:
@@ -72,7 +74,7 @@ The line from top to bottom = Cross Axis (Cross start to Cross end)
 
 
 Overflowing the container:
-With the flex-direction:row,  rule, the items overflow the container with the folowing straightforward code
+With the flex-direction:row  rule, the items overflow the container with the folowing straightforward code
 So with container display:flex; width:200px; items will overflow the container either with (default)row  or  even when it's explicitly declared (flex-direction:row)
 BELOW FIXES THIS.
 Below is a quote from the guide.
@@ -127,7 +129,6 @@ IMPORTANT!
 Baselin option seems to match up the first line of text of each item horizontaly. 
 
 
-STOPPED HERE
 align-content   For multi-line flexible containers. (Use 'align-items' above for single line flexible containers)
 This property only takes effect on multi-line flexible containers, where flex-wrap is set to either wrap or wrap-reverse). This will not work with a single-line flexible container (i.e. where flex-wrap is set to its default value of no-wrap).
 align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe
