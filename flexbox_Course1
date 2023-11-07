@@ -54,9 +54,11 @@ In this case, you are targeting the specific item to be inline.
 
 The flex-direction property determines a horizontal or vertical flow of content. 
 #####
-
+stopped here
 Properties of the container.
-display:  flex; |or|  inline-flex; (Not  currently sure about the difference between flex and inline flex).
+display:  flex; |or|  inline-flex; 
+flex gives the container the full width of the screen.
+inline-flex only gives the container the required width for it's child elements. 
 
 
 Flex-flow directions:
