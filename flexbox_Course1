@@ -25,7 +25,7 @@ You are using blueLaptop>projects/site styling/CSS FLEX>training.html for practi
 
 
 
-NOTES FROM CSS TRICKS PAGE
+NOTES FROM CSS TRICKS PAGE AND MY THOUGHTS
 Introduction:
 Flexbox, by nature is direction-agnostic (doesn't asume a specific vertical or horizontal flow) Unlike block (vertical) and inline (horizontal) elements in standard css.
 
@@ -39,9 +39,9 @@ Flex-flow v Block and Inline
 Flex-flow directions replace the regular Block and Inline css Layouts 
 
 
-Container: 
+Container:
 The container that holds the items to be 'flexed' AKA the Flex Container, the Parent.
-Items: 
+Items:
 The items within the container. AKA, Items, Content.
 
 
