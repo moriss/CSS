@@ -60,7 +60,7 @@ display:  flex; |or|  inline-flex;
 flex gives the container the full width of the screen/parent.
 inline-flex only gives the container the required width for it's child elements. 
 
-STOPPED HERE
+
 
 Flex-flow directions:
 Where a “regular” layout is based on both block and inline flow directions, the flex layout is based on “flex-flow directions”. 
@@ -85,6 +85,7 @@ This is a shorthand rule for the flex-direction and flex-wrap properties, which 
  display:flex;  flex-flow: column wrap; |or| row wrap;
 }
 Not that you still need display:flex; when using the flex-flow shorthand. And given that display:flex defaults to row, you don't actually need the 'row' in flex-flow.
+
 
 STOPPED HERE
 
