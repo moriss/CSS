@@ -1,3 +1,8 @@
+Todays work
+If any changes are made below, you must update github then delete below.
+9th November 2023
+https://github.com/moriss/CSS/edit/main/flexbox_Course1
+
 Contents: 
 General Notes
 NOTES FROM CSS TRICKS PAGE >Introduction 
@@ -87,8 +92,6 @@ This is a shorthand rule for the flex-direction and flex-wrap properties, which 
 Not that you still need display:flex; when using the flex-flow shorthand. And given that display:flex defaults to row, you don't actually need the 'row' in flex-flow.
 
 
-STOPPED HERE
-
 
 Justify Content,
 This defines the alignment along the main axis.
@@ -105,22 +108,41 @@ There are also two additional keywords you can pair with these values: safe and 
 Using safe ensures that however you do this type of positioning, you can’t push an element such that it renders off-screen (e.g. off the top) in such a way the content can’t be scrolled too (called “data loss”).
 
 
-Align Items   I think the following:(For single horizontal lines of content with no wrap) [see 'align-content' below instead, for multi-line flexible containers]
-This is kind of a 'How They Hang' (my quote) 
-It is how things are laid out along the cross axis. 
-The different options display a vertical movement of the objects to aligh them in a way that the rule demands. 
+
+
+This is for aligning items on the cross axis, so align-items: center; has items vertically centered inside the parent element. 
+This used to be a big problem pre flexbox where it was not so easy to align in this way. (Centered horizontaly AND verticaly.
+You would then add justify-content: center; to have it centered both in the main and cross axis.
+So the key way to remember this is JAI. J for justify content and ai for align items.
+
+
+
 So this movement is North to South or up and down. 
 .container {
-  align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+  align-items: *stretch | flex-start | flex-end | center | baseline[aligns text] | first baseline | last baseline[along the bottom] | start | end | self-start | self-end + ... safe | unsafe;
 }
 
+*stretch might be the default?
+
 IMPORTANT!
-Baselin option seems to match up the first line of text of each item horizontaly. 
+Baseline option seems to match up the first line of text of each item horizontaly but issues are caused when an image is used in place of the first line of text.
 
 
-align-content   For multi-line flexible containers. (Use 'align-items' above for single line flexible containers)
+stopped here
+
+
+align-content   This is for the up and down positioning of a cluster (multiple rows) of elements. You need to ensure the container is high enough to see the effects.
 This property only takes effect on multi-line flexible containers, where flex-wrap is set to either wrap or wrap-reverse). This will not work with a single-line flexible container (i.e. where flex-wrap is set to its default value of no-wrap).
-align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe
+
+align-content: 
+flex-start | flex-end |   These are up and down positionings and not left to right
+
+
+center[Vertically centered] | space-between[up and down space between] | space-around[vertically again] | space-evenly[vertically] | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe
+
+
+
+
 
 
 GAP: You have just pasted below from the resource. You haven't applied it anywhere yet. 
