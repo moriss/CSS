@@ -1,6 +1,11 @@
+Todays work for css flexbox
+If any changes are made below, you must update github then delete below.
+
+
+
 Todays work
 If any changes are made below, you must update github then delete below.
-9th November 2023
+21st November 2023
 https://github.com/moriss/CSS/edit/main/flexbox_Course1
 
 Contents: 
@@ -23,7 +28,7 @@ Align Items,
 
 General Notes:
 @@@
-You want to be more intuitive with flexbox so the first port of call is https://css-tricks.com/snippets/css/a-guide-to-flexbox/ and using this file for your notes as your progress through the guide. This s also saved as a pfd in blueLaptop>projects/site styling/CSS FLEX>
+You want to be more intuitive with flexbox so the first port of call is https://css-tricks.com/snippets/css/a-guide-to-flexbox/ and using this file for your notes as you progress through the guide. This s also saved as a pfd in blueLaptop>projects/site styling/CSS FLEX>
 
 You are using blueLaptop>projects/site styling/CSS FLEX>training.html for practice. Content can then be added to this page when understood. Also add to  flexbox_snipets  in a more condensed way with explanations.
 @@@
@@ -128,8 +133,6 @@ IMPORTANT!
 Baseline option seems to match up the first line of text of each item horizontaly but issues are caused when an image is used in place of the first line of text.
 
 
-stopped here
-
 
 align-content   This is for the up and down positioning of a cluster (multiple rows) of elements. You need to ensure the container is high enough to see the effects.
 This property only takes effect on multi-line flexible containers, where flex-wrap is set to either wrap or wrap-reverse). This will not work with a single-line flexible container (i.e. where flex-wrap is set to its default value of no-wrap).
@@ -160,16 +163,40 @@ Explicitly controls the space between flex items. It applies that spacing only b
 
 TEST OUT BELOW THEN AD TO SNIPETS
 
-Properties for the Children
+PROPERTIES FOR THE CHILDREN:
 (flex items)
-order
-You can target an item and set what order you want it to be placed in a sequence of items.
-.item {
-  order: 5; /* default is 0 */
-}
+
+I'm using a tutorial here to better understand the properties for children
+https://www.youtube.com/watch?v=sanswTlz4ZY
+4.29 in.
+
+
+Examples.
+flex:1; All items asigned a value of flex:1; will take up equal ammounts of the available space.
+flex:2; This item takes twice the available space as an item asigned flex:1;
 
 
 
+More Examples 
+item 1  flex: 1;
+item 2  flex: 0;
+So Item 1 takes up all the available space and item 2 takes none of the available space.
+If item 1 has a flex grow of 1 and item 2 has a flex grow of 2,  item 2 grows twice as much as item 1. It will take up twice as much of the available space than that of item 1.
+
+Ok so there's a slight complication we need to clarify. flex: 1 actually results in flex-grow: 1; , flex-shrink: 1; , flex-basis: 0;. 
+So with flex:1; you have instructed flex-grow to be set at 1[default is zero] and the other two (shrink and bases) just default to 1 and zero respectively.
+
+
+So this brings us onto Shorthand
+flex: 1 1 200px; This is shorthand for flex grow, shrink and basis (gsb). The default values are 0, 1 and auto respectively, as mentioned above.
+
+
+
+
+
+
+
+Lets read a quote from css tricks to further clarify.
 flex-grow
 .item {
   flex-grow: 4; /* default 0 */
@@ -181,13 +208,12 @@ If all items have flex-grow set to 1, the remaining space in the container will 
 
 flex-shrink
 
-This defines the ability for a flex item to shrink if necessary.
+This defines the ability for a flex item to shrink if necessary. If all items are set to (the default) 1, They will shrink in equal proportion.
+If an item is set to flex-shrink: 0; then it will not shrink as other items with a shrink value of 1 or above.
 
 .item {
   flex-shrink: 3; /* default 1 */
 }
-
-
 
 
 flex-basis
@@ -210,17 +236,34 @@ This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The se
 }
 
 It is recommended that you use this shorthand property rather than set the individual properties. The shorthand sets the other values intelligently.
+Please note, if you set flex to a single number ie flex:2; then the bases changes from its default 'auto' to zero.
 
+
+
+
+
+
+order
+You can target an item and set what order you want it to be placed in a sequence of items. But read this carefully!...
+.item {
+  order: 5; /* default is 0 */
+}
+Since the default is 0, if you only set one item to an order value which is above 0, then it will always come last since all other items are defaulted to 0. So if you want it first then you need to set the order to -1. This is from my experience of trying it.
+
+By the way, this is a quick way to reference a specific child
+.container >:nth-child(2) {order:2;}
+and I like it!
 
 
 
 
 
 align-self
-One item with a align-self value is positioned along the bottom of a flex parent instead of the top where all the rest of the items are.
+One item with an align-self value is -for example- positioned along the bottom of a flex parent instead of the top where all the rest of the items are.
+To see this in action, you may have to set a height value for the container.
 
 
-This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.
+In other words, align self allows the default alignment (or the one specified by the align-items property) to be overridden for individual flex items.
 
 Please see the align-items explanation to understand the available values.
 
@@ -229,3 +272,89 @@ Please see the align-items explanation to understand the available values.
 }
 
 Note that float, clear and vertical-align have no effect on a flex item.
+
+
+Some notes before we get into some practice
+As a general point, with the default row, the main axis starts on the left and moves right whilst the cross axis starts at the top then moves down.
+
+For this example we will use  .container as the container and .items  as the containers children.
+
+.container {display:flex; 
+Default: the items are laid out one after another from left to right and topmost of the container. 
+width:100%  The container will evenly spread it's children 100% across its width.
+
+}
+
+container > * { This is a quick way to reference ALL the container's children.
+width:150px; All items will have a fixed width of this.
+}
+
+To be a bit show-offy, you can use the following
+.container > :nth-child(2) {flex:1;}
+So the first colon refers to styling applying to the (>) children of the .container and the (2) refers to the second child element.
+
+A side not: Regarding the '>' symbol to target child elements.  (.container > ) This is not enough. You need to specify which children you wish to target. To target ALL children you use the * operator (.container > * {} ). In the example above, you are targeting the second child.
+
+
+
+
+
+
+IMAGES, IMAGES, IMAGES.
+Ok, so this was not straight forward at the beginning....
+
+
+STAND-ALONE IMAGES
+When you have stand-alone images that you want to spread evenly along a row.
+You initialy want to use   object-fit:cover;  to the  image so it maintains aspect ratio. Although this makes no visible difference when I used it!
+flex:1; Allows the images to grow and fill the available space proportionally. If an image is smaller in dimensions it will grow to fill the space possibly making it blurry.
+
+
+
+
+
+IMAGES IN CONTAINERS
+Images inside there own individual container:
+.container {display:flex; flex-flow: nowrap;}
+    .container div {flex:1;   display:flex; flex-flow: column nowrap; border:1px solid grey;}
+    .container div > * {flex:1 1 auto;} Here, the div's children are set to grow by 1 to fill the available space, shrink by 1 and have a flex bases of 0%.
+
+
+
+
+
+
+IMAGES WITH TEXT
+If images have differet heights, You can set them to a specific height:
+.item img {height:150px; object-fit:cover; } 
+You can also use   object-fit :cover;   which maintains the aspect ratio of the image.
+To be honest, when I take away the object fit property, it doesn't make any difference. It still fits fine just using the height property. But I would advise using it anyway.
+
+
+NOW IT'S TIME FOR SOME PRACTICE
+You are working with projects/site styling/css/css flex/site1
+
+
+
+PRACTICE NOTES
+23 dec 23
+Despite previous issues, I seem to have been able to set images neatly alon a row with corresponding text beneath.
+
+
+
+STOPPED HERE
+
+
+
+You are taking resources from blue/desktop/projects/site styling/bbc
+
+Opening files in terminal.
+This needs to be added to the terminal comands git file. 
+maurizio@maurizio-Inspiron-11-3162:~/Desktop/Projects/Site Styling/css/CSS FLEX/site_1$ google-chrome /home/maurizio/Desktop/Projects/'Site Styling'/css/'CSS FLEX'/site_1/index.html
+
+
+TERMINAL COMMAND ALERT
+Where it starts at google-chrome, you are able to open a file in the chrome browser by adding the full path to the file. Be sure to ad inverted comas to any folder or filename with space separated words. 
+
+
+
