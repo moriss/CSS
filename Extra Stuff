@@ -1,0 +1,25 @@
+Local Location: Blue/Desktop/CSS FLEX>Extra_Stuff
+
+For below, create a new file in github css for any new stuff you come across. Items can get deleted when considered no longer new.
+This can also be used for error notes.
+
+10th January 2024
+Non flexbox note:
+If you set a float-right property in a text div then add a width rule of 10% etc, the text seems to fall to the next line when you drag the screen size smaller. Ommiting the width property seems to keep the text on the same line. 
+
+Clearing floats:
+footer {clear:both}
+This stops ie float left where you want it to stop. 
+
+display:inline-block >Do this one next.See web page on phone
+
+New
+
+.container {
+display: flex;
+...
+gap: 10px;
+gap: 10px 20px; /* row-gap column gap */
+row-gap: 10px;
+column-gap: 20px;
+}
