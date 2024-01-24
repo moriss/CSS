@@ -1,0 +1,111 @@
+YOU ARE USING example.com IN THIS FOLDER TO DEVELOP YOUR TEMPLATE
+
+/*****************STOPPED HERE**************
+This is a good one to start with
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+
+The official flexbox documentation is very useful. Work through it to produce templates for web pages. 
+FLEXBOX DOCUMENTATION
+https://developer.mozilla.org/en-US/docs/Glossary/Flexbox
+
+
+This is something extra to read that deals with backword compatibility.
+Common issues
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Backwards_Compatibility_of_Flexbox
+*******************************************/
+
+/*****************RESOURCES***********************/
+This helps you to deal with bugs in older browsers
+/****https://github.com/philipwalton/flexbugs***/
+/**I think it's best to use flexbox on your sites **/
+****************************************************
+
+
+Keywords
+*****************************************************
+display:flex;
+flex-direction: row | row-reverse | column | column-reverse;
+row(left to right) is the default
+
+flex-wrap: nowrap | wrap | wrap-reverse;
+nowrap is the default
+
+flex-flow: column wrap;
+shorthand for flex-direction and flex-wrap
+
+*****************************************************
+
+
+
+
+
+**********************************************************
+justify-content: 
+This defines the alignment along the main axis.
+
+flex-start | flex-end | center | space-between | space-around |  space-evenly | start | end | safe | unsafe |
+flex-start is the default.
+start = items are packed toward the start of the writing-mode direction.
+end = items are packed toward the end of the writing-mode direction.
+left: items are packed toward left edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like start.
+right: items are packed toward right edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like end.
+
+The safest values are flex-start, flex-end, and center 
+
+*********************************************************
+
+
+
+
+*********************************************************
+align-items:
+This defines the default behaviour for how flex items are laid out along the cross axis on the current line.
+It basically means the vertical alignment I think. 
+ 
+stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end | safe | unsafe;
+
+*********************************************************
+
+
+
+
+
+*****************************************************
+align-content
+This property only takes effect on multi-line flexible containers, where flex-wrap is set to either wrap or wrap-reverse). A single-line flexible container (i.e. where flex-wrap is set to its default value, no-wrap) will not reflect align-content.
+
+align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+
+
+*****************************************************
+
+
+
+
+SOME NOTES TO READ
+html { }
+.container {display:flex;/**Parent container refering to its children**/
+ 
+<!--SCENARIOS-
+flex-direction:column;
+flex-direction:column-reverse; (reverses direction)
+flex-direction:row; (default)
+flex-direction:row-reverse; (reverses direction)
+
+
+.wrap { 
+display:flex; 
+flex-wrap:wrap; 
+flex-wrap:nowrap;
+flex-wrap:wrap-reverse;
+ }
+
+
+
+
+
+
+
+
