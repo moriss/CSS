@@ -26,7 +26,10 @@ STOPPED HERE
 You should now in a position to push all updated files to github. So try this now.
 The chatgpt title is  'Change Filename'
 
+Navigate to your local repo.
+git add .    This stages ALL files. To stage specific files, add them one by one by filename.
 
+git commit -m "You comment here"    This commits(updates) from local to github
 
 
 For below, create a new file in github css for any new stuff you come across. Items can get deleted when considered no longer new.
