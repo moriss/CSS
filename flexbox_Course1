@@ -1,6 +1,6 @@
 Todays work for css flexbox
 If any changes are made below, you must update github then delete below.
-
+Last update to github was made 24th December 2024
 
 
 Todays work
@@ -306,8 +306,12 @@ Ok, so this was not straight forward at the beginning....
 
 STAND-ALONE IMAGES
 When you have stand-alone images that you want to spread evenly along a row.
-You initialy want to use   object-fit:cover;  to the  image so it maintains aspect ratio. Although this makes no visible difference when I used it!
+You initialy may want to use   object-fit:cover;  to the  image so it maintains aspect ratio. Although this makes no visible difference when I used it I intend using it anyway! The other option is object-fit:fill;
 flex:1; Allows the images to grow and fill the available space proportionally. If an image is smaller in dimensions it will grow to fill the space possibly making it blurry.
+flex-basis allows you to size the image as a starting point. Be aware if the images are not behaving as you expect, the problem could be with the individual images. Ie: all my png images worked but a jpg image did not accept flex basis and kept to its own original size. 
+The best way around this I found is to ad   img {width 200px; }   This makes all images the required width.
+
+for shorthand you could have flex: 1 1 250px;  Which is grow, shrink and starting size, respectively.  But remember, you still need to ad a separate image width (as above)
 
 
 
@@ -315,6 +319,7 @@ flex:1; Allows the images to grow and fill the available space proportionally. I
 
 IMAGES IN CONTAINERS
 Images inside there own individual container:
+NOTE: There seems to be an intermitent issue with flex basis. When I download images from the web (unsplash.com) flex-basis seems to have no impact. Even when I 'save as' or even change the format from jpg to png. The current solution is to simply ad a  img {width: 200px;}  or whatever image size required. 
 .container {display:flex; flex-flow: nowrap;}
     .container div {flex:1;   display:flex; flex-flow: column nowrap; border:1px solid grey;}
     .container div > * {flex:1 1 auto;} Here, the div's children are set to grow by 1 to fill the available space, shrink by 1 and have a flex bases of 0%.
@@ -343,10 +348,9 @@ Despite previous issues, I seem to have been able to set images neatly alon a ro
 
 
 STOPPED HERE
-
-
-
 You are taking resources from blue/desktop/projects/site styling/bbc
+
+You discovered the ::before rule when working out the long line between "Post office  and  "see all". Please go over this in your head until clear. It is at  container2 on index.html
 
 Opening files in terminal.
 This needs to be added to the terminal comands git file. 
