@@ -1,17 +1,62 @@
-Local Location: Blue/Desktop/CSS FLEX>Extra_Stuff
+Local Location: Blue/Desktop/CSS FLEX>style_story
+
+
+STOPPED HERE 
+
+Before we get onto anything else, you need to do the repo thing with github, same as you did with cs50.
+
+So start by going to github/CSS and paste/add new files so everything is updated. 
+readme = done
+
+Next, follow instructions to pull github files locally.
+
+You are now in a position to push all updated files to github.
 
 For below, create a new file in github css for any new stuff you come across. Items can get deleted when considered no longer new.
 This can also be used for error notes.
 
+
+Journey notes note:
+Before we get into below, I came across a historical issue where a container will not cover its children when they are floated or perhaps positioned in a certain way. Ie taken out of the natrual flow. The way to deal with this is by clearing the floats before the end of the container div.
+</div class  ="container">
+container's children are here!
+<div class="clear"></div> The css would be .clear{clear:both;}
+</div> end of container div
+
+
+
+WORKING ON THE BBC WEBSITE
+::before  WITHOUT FLEXBOX
+In copying the bbc site I was working on the following section:
+
+  "Post office scandal ----------------see all"   
+  
+  The line lies centraly between the text and covers the entire page. I tried doing it without flexbox and this is where I got to:
+I needed to set the children to display:inline;(NOT the container)  so the two children displayed inline. 
+
+I then needed to set the ::before psuedo element to content:""; which defaults to a space, display:inline-block, to allow a height to be applied to the space. (display:block doesn't work as it puts the line above the text as its own block element). I then set a width:300px; or whatever width you would like and a height of 1px and a background to black to make it visible.
+
+The problems that remain are: 
+having the line horizontally central to the text and 
+automatically spanned across the whole page but stopping before  "see all" 
+
+And this is WITH FLEXBOX
+.container2 {display:flex; }  /**title and see all are set to display flex**/
+    .see_all  {display:flex; align-items:center; flex:1 1 auto; }  /**see all and ::before are set to display flex**/
+    .see_all::before {content: ""; flex-grow:1; height:1px; background:black; margin:0 10px 0 10px;}  /**flex grow is required to have it span across the page as it specifically targets the psuedo element, the height gives the psuedo empty space a height and the background makes it black. The result is a 1pixel line that stretches all the way across the page but **/
+
+
+
+
+
 10th January 2024
-Non flexbox note:
 If you set a float-right property in a text div then add a width rule of 10% etc, the text seems to fall to the next line when you drag the screen size smaller. Ommiting the width property seems to keep the text on the same line. 
 
 Clearing floats:
 footer {clear:both}
 This stops ie float left where you want it to stop. 
 
-display:inline-block >Do this one next.See web page on phone
+display:inline-block >Compared to display:inline, this allows you to set a width and height on the element.
 
 New
 
