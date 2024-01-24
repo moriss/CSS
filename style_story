@@ -1,16 +1,33 @@
 Local Location: Blue/Desktop/CSS FLEX>style_story
 
 
-STOPPED HERE 
-
 Before we get onto anything else, you need to do the repo thing with github, same as you did with cs50.
 
 So start by going to github/CSS and paste/add new files so everything is updated. 
 readme = done
+style_story = done
+git_css_flexbox_course1 = done
+css_flex_guide = done
 
-Next, follow instructions to pull github files locally.
 
-You are now in a position to push all updated files to github.
+
+ 
+So now you have finished above, Next step is to pull the repository down to local.
+This is done through cloning.
+I am using chatgpt to help me  Title:Clone GitHub repo locally.
+
+Command: git clone https://github.com/moriss/CSS
+The URL was taken from clicking   '<>code'   on the github menu then pasting the url into the command line as above.
+
+The official name of the locally cloned directory is simply CSS.  You deleted the old version you were using previously that contained the exact same files. 
+
+
+STOPPED HERE
+You should now in a position to push all updated files to github. So try this now.
+The chatgpt title is  'Change Filename'
+
+
+
 
 For below, create a new file in github css for any new stuff you come across. Items can get deleted when considered no longer new.
 This can also be used for error notes.

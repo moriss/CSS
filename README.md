@@ -1,5 +1,7 @@
 Work on css flexbox week to 10th January 2024
 
+This repo name CSS was locally cloned at blueDesktop. The name of the file is CSS. This is where you will edit and push updates to github.
+
 23.01.24
 As a brief update on how you intend moving forward:
 You have created a "style_story" file that is your journey through learning styling and related. "style_story" will prove to be a great resource especially when you have been away from it for a while. As you work through it, things can be condensed and moved to other relevant files for more specific referencing.
@@ -52,5 +54,6 @@ blue Desktop/CSS_FLEX/quick samples. Although don't worry too much about this.
 
 This is a further helpful resource you used for grow, shrink, basis.
 https://www.youtube.com/watch?v=sanswTlz4ZY This video is short video from scrimba 
+
 
 
