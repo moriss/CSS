@@ -1,7 +1,7 @@
 Local Location: Blue/Desktop/CSS FLEX>style_story
 
 
-Before we get onto anything else, you need to do the repo thing with github, same as you did with cs50.
+Before we get onto anything else, you need to clone the CSS github repo.
 
 So start by going to github/CSS and paste/add new files so everything is updated. 
 readme = done
@@ -9,11 +9,8 @@ style_story = done
 git_css_flexbox_course1 = done
 css_flex_guide = done
 
+Now that github files are updated, we can move to cloning it to our local laptop.
 
-
- 
-So now you have finished above, Next step is to pull the repository down to local.
-This is done through cloning.
 I am using chatgpt to help me  Title:Clone GitHub repo locally.
 
 Command: git clone https://github.com/moriss/CSS
@@ -23,13 +20,52 @@ The official name of the locally cloned directory is simply CSS.  You deleted th
 
 
 STOPPED HERE
-You should now in a position to push all updated files to github. So try this now.
+You should now be in a position to push all updated files to github. So try this now.
 The chatgpt title is  'Change Filename'
+
+Please note, you need a personal access token to link your local repository to github via the terminal window.
+
+Getting the personal access token: (Please note you can use an existing pat unless it has expired).
+github/your profile picture/settings/developer-settings/ personal access token/tokens-classic/generate new token. Complete all the boxes for now then select "generate token" The token will show at top of page and is copyable. You can never see the token again on github so you need to save it somewhere else or generate a new one each time. 
+
+Her is the token:
+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
 
 Navigate to your local repo.
 git add .    This stages ALL files. To stage specific files, add them one by one by filename.
 
 git commit -m "You comment here"    This commits(updates) from local to github
+
+
+
+
+
+
+Now this is where some errors start to occur. 
+
+The push command is 
+
+git push -u origin <name of branch>
+
+To find out what branch you want to push it to use the following comand locally
+
+git branch
+
+In my case on  * main came up so you would use this for now
+
+git push -u origin main
+
+
+Now here is another issue that needs resolving before you start pushing to github.
+
+
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+
+
+This is my generated token. It was done via github/profile picture/settings/developer setting/personal access token/generate token.
+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
+I may have set it to either expire in 90 days or never expire. I can't remember.
 
 
 For below, create a new file in github css for any new stuff you come across. Items can get deleted when considered no longer new.
