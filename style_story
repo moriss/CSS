@@ -4,11 +4,9 @@ Local Location: Blue/Desktop/CSS FLEX>style_story
 Before we get onto anything else, you need to clone the CSS github repo.
 
 So start by going to github/CSS and paste/add new files so everything is updated. 
-readme = done
-style_story = done
-git_css_flexbox_course1 = done
-css_flex_guide = done
+ALL DONE
 
+CLONEING A GITHUB REPO:
 Now that github files are updated, we can move to cloning it to our local laptop.
 
 I am using chatgpt to help me  Title:Clone GitHub repo locally.
@@ -19,7 +17,12 @@ The URL was taken from clicking   '<>code'   on the github menu then pasting the
 The official name of the locally cloned directory is simply CSS.  You deleted the old version you were using previously that contained the exact same files. 
 
 
+
+
+
 STOPPED HERE
+
+ADD, COMMIT AND PUSH
 You should now be in a position to push all updated files to github. So try this now.
 The chatgpt title is  'Change Filename'
 
@@ -37,11 +40,14 @@ git add .    This stages ALL files. To stage specific files, add them one by one
 git commit -m "You comment here"    This commits(updates) from local to github
 
 
+Now you need to link your local repo to github (if not already done so)
 
 
+git remote add origin https://github.com/moriss/CSS.git
+
+If it says this: fatal: remote origin already exists. Then it doesn't need to be linked.
 
 
-Now this is where some errors start to occur. 
 
 The push command is 
 
@@ -56,16 +62,23 @@ In my case on  * main came up so you would use this for now
 git push -u origin main
 
 
-Now here is another issue that needs resolving before you start pushing to github.
-
-
-remote: Support for password authentication was removed on August 13, 2021.
-remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+Where you are prompted for username and password, use your personal access token instead of your password.
 
 
 This is my generated token. It was done via github/profile picture/settings/developer setting/personal access token/generate token.
 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
-I may have set it to either expire in 90 days or never expire. I can't remember.
+I think I set it to expire in 30 days.
+
+
+News about password authentication that subsequently requires a PAT.
+###
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+###
+
+END OF ADD, COMMIT AND PUSH
+
+
 
 
 For below, create a new file in github css for any new stuff you come across. Items can get deleted when considered no longer new.
