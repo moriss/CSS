@@ -1,5 +1,7 @@
 Local Location: Blue/Desktop/CSS FLEX>style_story
 
+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
+
 changed
 
 As a starting point you have been working on cloneing githubs repos to your local laptop. Immediately below is a quick start for updating repos to github. Further down the page shows you how to clone.
@@ -10,6 +12,8 @@ git commit -m "Note for yourself here"
 git push -u origin main   (main being the name of the branch you wish to push to)
 username:
 Password   ghp_rIWGIfchair0ZgzYYyeXDiDn4Q4v7RGiua0bbat2JN  self encrypted!
+
+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
 
 use:  git branch  to check what branches you have available. 
 @@@@
