@@ -1,78 +1,78 @@
 Local Location: Blue/Desktop/CSS FLEX>style_story
 
-so lets change things again
+changed
 
-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
+As a starting point you have been working on cloneing githubs repos to your local laptop. Immediately below is a quick start for updating repos to github. Further down the page shows you how to clone.
+This is the shortcut to update from local to github. You need to put this where it can be easily accessible to all repos.
+@@@@
+git add .    or   git add <filename>
+git commit -m "Note for yourself here"
+git push -u origin main   (main being the name of the branch you wish to push to)
+username:
+Password   ghp_rIWGIfchair0ZgzYYyeXDiDn4Q4v7RGiua0bbat2JN  self encrypted!
 
-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
+use:  git branch  to check what branches you have available. 
+@@@@
 
 
-Before we get onto anything else, you need to clone the CSS github repo.
+You cloned the CSS github repo after pasting updates from local and adding any new files so everything is updated. 
 
-So start by going to github/CSS and paste/add new files so everything is updated. 
-ALL DONE
-
-CLONEING A GITHUB REPO:
-Now that github files are updated, we can move to cloning it to our local laptop.
-
-I am using chatgpt to help me  Title:Clone GitHub repo locally.
+I used chatgpt to help me  Title:Clone GitHub repo locally.
 
 Command: git clone https://github.com/moriss/CSS
 The URL was taken from clicking   '<>code'   on the github menu then pasting the url into the command line as above.
 
-The official name of the locally cloned directory is simply CSS.  You deleted the old version you were using previously that contained the exact same files. 
-
-
-
+The official name of the locally cloned directory is simply CSS.
 
 
 STOPPED HERE
 
 ADD, COMMIT AND PUSH
-You should now be in a position to push all updated files to github. So try this now.
-The chatgpt title is  'Change Filename'
+You then pushed all updated files to github. 
+The chatgpt title is  'Change Filename'  for more instructions.
 
 Please note, you need a personal access token to link your local repository to github via the terminal window.
 
-Getting the personal access token: (Please note you can use an existing pat unless it has expired).
+This is how you got one: (Please note you can use an existing pat unless it has expired).
 github/your profile picture/settings/developer-settings/ personal access token/tokens-classic/generate new token. Complete all the boxes for now then select "generate token" The token will show at top of page and is copyable. You can never see the token again on github so you need to save it somewhere else or generate a new one each time. 
 
-Her is the token:
-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
-
-Navigate to your local repo.
-git add .    This stages ALL files. To stage specific files, add them one by one by filename.
-
-git commit -m "You comment here"    This commits(updates) from local to github
+Her is the token:  ghp_rIWGIfchair0ZgzYYyeXDiDn4Q4v7RGiua0bbat2JN    self encrypted!
 
 
-Now you need to link your local repo to github (if not already done so)
+
+Now this is what you did to begin the update process.
+git add .    This stages ALL files (making them ready to commit). To stage specific files, add them one by one by filename.
+
+git commit -m "You comment here"    This commits(updates) effecticely step two.
 
 
+
+You may need to link your local repo to github (if not already done so)
 git remote add origin https://github.com/moriss/CSS.git
 
 If it says this: fatal: remote origin already exists. Then it doesn't need to be linked.
 
 
 
-The push command is 
+The push command was the next thing you did. 
 
 git push -u origin <name of branch>
 
-To find out what branch you want to push it to use the following comand locally
+To find out what branch you want to push it to use the following comand (locally) for a list of branch names.
 
 git branch
 
-In my case on  * main came up so you would use this for now
+In my case on  * main came up so just used that.
 
+The push command:
 git push -u origin main
 
 
-Where you are prompted for username and password, use your personal access token instead of your password.
+Where you were prompted for username and password, you used your personal access token instead of your password.
 
 
-This is my generated token. It was done via github/profile picture/settings/developer setting/personal access token/generate token.
-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
+This is my latest generated token. It was done via github/profile picture/settings/developer setting/personal access token/generate token.
+ghp_rIWGIfchair0ZgzYYyeXDiDn4Q4v7RGiua0bbat2JN  (self encrypted!).
 I think I set it to expire in 30 days.
 
 
@@ -83,6 +83,8 @@ remote: Please see https://docs.github.com/en/get-started/getting-started-with-g
 ###
 
 END OF ADD, COMMIT AND PUSH
+
+
 
 
 
